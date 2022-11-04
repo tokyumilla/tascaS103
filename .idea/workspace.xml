@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2fb7479-eddd-4846-9827-3e7494ff7be5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/n1exercici2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/n1exercici3/Countries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/n1exercici3/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +25,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2H4w5ej56GMXOU6OU8Sh4qpy6sF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
@@ -52,11 +56,35 @@
       <option name="project" value="LOCAL" />
       <updated>1667559605466</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ejercicio 2 hecho a la espera de corrección">
+      <created>1667560823038</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667560823038</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Ejercicio 1 hecho a la espera de corrección" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 1 hecho a la espera de corrección" />
+    <MESSAGE value="Ejercicio 2 hecho a la espera de corrección" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 2 hecho a la espera de corrección" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/n1exercici3/Main.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
