@@ -1,18 +1,15 @@
 package n1exercici3;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        String nameContestant = askingName();
+        String name = askingName();
         Map capitals = readingFile();
         List keysShuffled = shuffleKeys(capitals);
         int points = quiz(capitals, keysShuffled);
-
+        writingNames (name, points);
 
     }
 
@@ -20,13 +17,12 @@ public class Main {
     public static String askingName() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce tu nombre:");
-        String nameContestant = sc.nextLine();
-        return nameContestant;
+        return sc.nextLine();
     }
 
     public static Map readingFile() {
         Map capitals = new HashMap();
-        try (FileReader fr = new FileReader("D:/cursoespecializacionjava/tascaS103/src/n1exercici3/Countries.txt");) {
+        try (FileReader fr = new FileReader("D:/cursoespecializacionjava/tascaS103/src/n1exercici3/Countries.txt")) {
             BufferedReader br = new BufferedReader(fr);
             String line;
             while ((line = br.readLine()) != null) {
@@ -66,7 +62,26 @@ public class Main {
                 System.out.println("Lo siento, respuesta incorrecta, la respuesta correcta era: " + answerCorrect);
             }
         }
+        System.out.println("Has obtenido un total de " + points + " puntos.");
         return points;
     }
 
+    public static void writingNames(String name, int points) {
+        FileWriter fw = null;
+        PrintWriter pw;
+        try {
+            fw = new FileWriter("D:/cursoespecializacionjava/tascaS103/src/n1exercici3/Classification.txt", true);
+            pw = new PrintWriter(fw);
+            pw.println(name + " -> "+ points + " puntos");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (null != fw) fw.close();
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
+        }
+
+    }
 }

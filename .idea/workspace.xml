@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2fb7479-eddd-4846-9827-3e7494ff7be5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/n1exercici3/Classification.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/n1exercici3/Countries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/n1exercici3/Countries.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/n1exercici3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n1exercici3/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667682396494</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Queda por desarrollar el código para crear clasificacion.txt">
+      <created>1667683535951</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667683535951</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,7 +108,8 @@
     <MESSAGE value="Errores en ejercicio 3, no puedo controlar los intros" />
     <MESSAGE value="Errores en ejercicio 3, no puedo controlar los espacios en blanco" />
     <MESSAGE value="A punto de realizar el programa, cierro para ordenar métodos" />
-    <option name="LAST_COMMIT_MESSAGE" value="A punto de realizar el programa, cierro para ordenar métodos" />
+    <MESSAGE value="Queda por desarrollar el código para crear clasificacion.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Queda por desarrollar el código para crear clasificacion.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -112,12 +120,12 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/n1exercici3/Main.java</url>
-          <line>10</line>
+          <line>7</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/n1exercici3/Main.java</url>
-          <line>49</line>
+          <line>46</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
