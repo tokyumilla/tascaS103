@@ -8,21 +8,15 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-       String nameContestant = askingName();
-      // quiz(shuffleCapitals(readingFile()));
+        String nameContestant = askingName();
         Map capitals = readingFile();
         List keysShuffled = shuffleKeys(capitals);
+        int points = quiz(capitals, keysShuffled);
 
-
-
-      
-
-
-
-
-       
 
     }
+
+
     public static String askingName() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce tu nombre:");
@@ -30,30 +24,15 @@ public class Main {
         return nameContestant;
     }
 
-    public static List shuffleKeys (Map capitals){
-        List keys = new ArrayList(capitals.keySet());
-        Collections.shuffle(keys);
-        return keys;
-    }
-
-    public static void quiz (LinkedHashMap capitalsShuffled) {
-        Scanner sc = new Scanner (System.in);
-        for (int i=0; i<10; i++) {
-            System.out.println("Dime la capital de " + capitalsShuffled.get(i));
-            String respuesta = sc.nextLine().toLowerCase();
-
-        }
-
-    }
     public static Map readingFile() {
         Map capitals = new HashMap();
-        try(FileReader fr = new FileReader("D:/cursoespecializacionjava/tascaS103/src/n1exercici3/Countries.txt");) {
+        try (FileReader fr = new FileReader("D:/cursoespecializacionjava/tascaS103/src/n1exercici3/Countries.txt");) {
             BufferedReader br = new BufferedReader(fr);
             String line;
-            while ((line= br.readLine()) !=null) {
-                String[] chain = line.split (" ");
+            while ((line = br.readLine()) != null) {
+                String[] chain = line.split(" ");
                 if (chain.length == 2)
-                capitals.put(chain[0],chain[1]);
+                    capitals.put(chain[0], chain[1]);
             }
             fr.close();
             System.out.println("Capitales importadas correctamente");
@@ -66,4 +45,28 @@ public class Main {
         }
         return capitals;
     }
+
+    public static List shuffleKeys(Map capitals) {
+        List keys = new ArrayList(capitals.keySet());
+        Collections.shuffle(keys);
+        return keys;
+    }
+
+    public static int quiz(Map capitals, List shuffleKeys) {
+        Scanner sc = new Scanner(System.in);
+        int points = 0;
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Dime la capital de " + shuffleKeys.get(i));
+            String answerUser = sc.nextLine().toLowerCase();
+            String answerCorrect = capitals.get(shuffleKeys.get(i)).toString().toLowerCase();
+            if (answerUser.equals(answerCorrect)) {
+                System.out.println("Enhorabuena, respuesta correcta");
+                points++;
+            } else {
+                System.out.println("Lo siento, respuesta incorrecta, la respuesta correcta era: " + answerCorrect);
+            }
+        }
+        return points;
+    }
+
 }
